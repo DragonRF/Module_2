@@ -85,4 +85,4 @@ EmployeeManager.add(employee3)
 EmployeeManager.delete(employee1)
 
 EmployeeManager.edit(employee2,employee1)
-console.log(EmployeeManager.display());
+console.table(EmployeeManager.display());
