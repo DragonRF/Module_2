@@ -1,4 +1,5 @@
 import {Product} from "./Product";
+// @ts-ignore
 import {ProductManager} from "./ProductManager";
 
 let laptop = new Product("Laptop", 20000);
