@@ -81,8 +81,10 @@ let employee3 = new EmployeeManager('11','12','13','14','15')
 EmployeeManager.add(employee1)
 EmployeeManager.add(employee2)
 EmployeeManager.add(employee3)
-
+console.table(EmployeeManager.display());
 EmployeeManager.delete(employee1)
-
+console.log('------Sau khi xoa:----------')
+console.table(EmployeeManager.display());
+console.log('------Sau khi them:----------')
 EmployeeManager.edit(employee2,employee1)
 console.table(EmployeeManager.display());
