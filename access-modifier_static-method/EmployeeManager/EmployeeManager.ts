@@ -85,6 +85,6 @@ console.table(EmployeeManager.display());
 EmployeeManager.delete(employee1)
 console.log('------Sau khi xoa:----------')
 console.table(EmployeeManager.display());
-console.log('------Sau khi them:----------')
+console.log('------Sau khi sua:----------')
 EmployeeManager.edit(employee2,employee1)
 console.table(EmployeeManager.display());
