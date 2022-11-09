@@ -23,20 +23,3 @@ export class Product {
         this.price = price
     }
 }
-
-export class ProductManager {
-    private products = [];
-
-    constructor(products = []) {
-        this.products = products
-    }
-
-    get getAll() {
-        return this.products;
-    }
-
-    set add(product) {
-        this.products.push(product);
-    }
-
-}
