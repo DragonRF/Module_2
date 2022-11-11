@@ -27,6 +27,8 @@ export class Cylinder extends Circle {
             + this.getRadius()
             + ' and with height = '
             + this.getHeight()
+            + ' also with volume = '
+            + this.getVolume()
             + ', which is a subclass of '
             + super.toString();
     }
