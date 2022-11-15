@@ -1,10 +1,10 @@
 export class CanBo {
     private _name!: string;
     private _age!: number;
-    private _gender!: boolean;
+    private _gender!: string;
     private _address!: string;
 
-    constructor(name: string, age: number, gender: boolean, address: string) {
+    constructor(name: string, age: number, gender: string, address: string) {
         this._name = name;
         this._age = age;
         this._gender = gender;
@@ -27,11 +27,11 @@ export class CanBo {
         this._age = value;
     }
 
-    get gender(): boolean {
+    get gender(): string {
         return this._gender;
     }
 
-    set gender(value: boolean) {
+    set gender(value: string) {
         this._gender = value;
     }
 
