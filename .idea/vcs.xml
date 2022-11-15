@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DemoModule2C09" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ES6_Demo/Practice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MD2_bai-Tap" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Typescript/fanSpeed" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/typescript-cleancode-refactoring-variable-extraction" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/typescript-error-demo" vcs="Git" />
