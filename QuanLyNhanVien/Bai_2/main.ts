@@ -100,7 +100,7 @@ function display() {
 }
 
 function displayAll() {
-    console.log(`--------------Tài hiệu----------------`);
+    console.log(`--------------Tài liệu----------------`);
     console.log(libraryManager.findAll());
 }
 
