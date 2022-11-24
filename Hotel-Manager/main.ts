@@ -142,6 +142,12 @@ function rent(room: Room){
     let total = 0;
     if(room.type == 'C'){
         total = 100 * room.dateRent;
+    } else if (room.type == 'B'){
+        total = 300 * room.dateRent;
+    } else if (room.type == 'A'){
+        total = 500 * room.dateRent;
+    } else {
+        total = 50 * room.dateRent;
     }
     room.status = false;
     room.dateRent = 0;
