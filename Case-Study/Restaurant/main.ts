@@ -1,5 +1,5 @@
-import {MenuManager} from "./Restaurant/menuManager";
-import {DishManager} from "./Restaurant/dishManager";
+import {MenuManager} from "./menuManager";
+import {DishManager} from "./dishManager";
 
 let input = require('readline-sync')
 let menuManager = new DishManager()
