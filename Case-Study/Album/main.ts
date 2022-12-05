@@ -66,12 +66,12 @@ function register() {
                 console.log(`\x1b[31m  This account already in use!! \x1b[0m `);
             }
         }
-        let useNameDone: string;
+        let userNameDone: string;
         let passWordDone: string;
         if (test == false) {
             console.log(`\x1b[31m  Please re-enter your account !!  \x1b[0m`);
         } else {
-            useNameDone = userName;
+            userNameDone = userName;
             let flag2: boolean = false;
             do {
                 let passWord = input.question(`\x1b[1m Enter your PassWord: \x1b[0m
@@ -86,7 +86,7 @@ function register() {
                     console.log(`\x1b[31m Please re-enter your password !! \x1b[0m`);
                 } else {
                     passWordDone = passWord;
-                    let account = new Account(useNameDone, passWordDone);
+                    let account = new Account(userNameDone, passWordDone);
                     theListAccount.add(account);
                     flag = true;
                     flag2 = true;
@@ -228,7 +228,7 @@ function showSongOnAlbum(id: number) {
 
 function menuDeleteAlbum() {
     let selectID = +input.question(`\x1b[1m  Enter Album ID: \x1b[0m`);
-    let select = `\x1b[1m --Do you wanna to delete this ?? \x1b[0m \n
+    let select = `\x1b[1m --Do you wanna to delete this album?? \x1b[0m \n
                 \x1b[31m  1.Yes \x1b[0m
                 \x1b[32m  0.No  \x1b[0m`
     let choice1;
@@ -238,7 +238,7 @@ function menuDeleteAlbum() {
         switch (choice1) {
             case 1:
                 deleteAlbum(selectID);
-                console.log(`\x1b[32m Delete Success  \x1b[0m`)
+                console.log(`\x1b[32m Delete Success!!!  \x1b[0m`)
                 return musicManager()
             case 2:
                 musicManager();
@@ -342,9 +342,9 @@ function addNewSong() {
                 console.log(`\x1b[31m  Please re-enter Song Name !!  \x1b[0m`);
             } else {
                 let singer = input.question(`\x1b[1m  Enter Singer Name:  \x1b[0m`);
-                let musician = input.question(`\x1b[1m  Enter Composer Name:  \x1b[0m`);
+                let composer = input.question(`\x1b[1m  Enter Composer Name:  \x1b[0m`);
                 nameSongDone = nameSong;
-                let song = new Song(idSong, nameSongDone, singer, musician);
+                let song = new Song(idSong, nameSongDone, singer, composer);
                 theListSong.add(song);
                 theListAlbum.findAll()[theListAlbum.findAll().length - 1].listSong.push(song);
                 fragSong = true;
@@ -370,9 +370,9 @@ function remakeSong() {
         let id = +input.question(`\x1b[1m   Enter Song ID:             \x1b[0m`)
         let name = input.question(`\x1b[1m    Enter Song Name:           \x1b[0m`)
         let singer = input.question(`\x1b[1m    Enter Performing Singer :  \x1b[0m`)
-        let musician = input.question(`\x1b[1m    Enter Composer:            \x1b[0m`)
+        let composer = input.question(`\x1b[1m    Enter Composer:            \x1b[0m`)
 
-        theListSong.edit(id, new Song(id, name, singer, musician))
+        theListSong.edit(id, new Song(id, name, singer, composer))
     }
 
 }
