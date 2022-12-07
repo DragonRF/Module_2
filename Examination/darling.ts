@@ -147,7 +147,7 @@ function main() {
                 else console.log(darlingManager.findAll())
                 break;
             case 2:
-                let searchName = readlineSync.question('Enter name need to search:  ');
+                let searchName = readlineSync.question('Enter name needs to be search:  ');
                 let arr = darlingManager.searchDarlingByName(searchName)
                 if (arr.length === 0) console.log('Không có dữ liệu phù hợp.')
                 else console.log(arr)
@@ -158,7 +158,7 @@ function main() {
                 let darlingName = readlineSync.question('Enter name :  ');
                 let zodiac = zodiacChoice();
                 let darlingAddress = readlineSync.question('Enter address :  ');
-                let darlingBirthYear = +readlineSync.question('Enter birth year :  ');
+                let darlingBirthYear = +readlineSync.question('Enter year :  ');
                 let darlingHobby = readlineSync.question('Enter hobby :  ');
                 let darling = new Darling(darlingId, darlingName, zodiac, darlingAddress, darlingBirthYear, darlingHobby)
                 let flag = true;
@@ -192,7 +192,7 @@ function main() {
                 let darlingNameEdit = readlineSync.question('Enter name:  ');
                 let zodiacEdit = zodiacChoice();
                 let darlingAddressEdit = readlineSync.question('Enter address:  ');
-                let darlingBirthYearEdit = +readlineSync.question('Enter birth year:  ');
+                let darlingBirthYearEdit = +readlineSync.question('Enter year:  ');
                 let darlingHobbyEdit = readlineSync.question('Enter hobby:  ');
                 let darlingEdit = new Darling(editId, darlingNameEdit, zodiacEdit, darlingAddressEdit, darlingBirthYearEdit, darlingHobbyEdit)
                 darlingManager.editDarlingById(editId, darlingEdit)
