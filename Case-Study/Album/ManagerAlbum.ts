@@ -9,7 +9,7 @@ export class ManagerAlbum implements Manager<Album> {
         if (t) {
             this.listAlbum.push(t);
         } else {
-            return 'Please enter Album name!'
+            return 'Please enter TimNguoiIu name!'
         }
     }
 
